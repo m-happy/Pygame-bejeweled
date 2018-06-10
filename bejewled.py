@@ -45,7 +45,7 @@ def main():
     #load images
     GEMIMAGES = []
     for i in range(1, NUMGEMIMAGES + 1):
-        gemImage  = pygame.image.load('gem%s.png' %i)
+        gemImage  = pygame.image.load('alex/gem%s.png' %i)
         if gemImage.get_size() != (GEMIMAGESIZE, GEMIMAGESIZE):
             gemImage = pygame.transform.smoothscale(gemImage,(GEMIMAGESIZE, GEMIMAGESIZE))
             GEMIMAGES.append(gemImage)
